@@ -1,4 +1,4 @@
-package day7
+package day8
 
 import (
 	"aoc/utils"
@@ -14,8 +14,12 @@ type Instruction struct {
 	value     int
 }
 
+func (i Instruction) copy() Instruction {
+	return i
+}
+
 func getInstructions() []Instruction {
-	raw := utils.ReadFile("day8/smol_input.txt")
+	raw := utils.ReadFile("day8/input.txt")
 
 	var instructions []Instruction
 

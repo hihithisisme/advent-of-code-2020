@@ -1,5 +1,7 @@
 package day7
 
+type bag string
+
 type innerBag struct {
 	qty   int
 	bagID bag

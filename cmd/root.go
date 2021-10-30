@@ -1,7 +1,14 @@
 package cmd
 
 import (
+	"aoc/day10"
+	"aoc/day11"
+	"aoc/day12"
+	"aoc/day13"
+	"aoc/day14"
 	"aoc/day7"
+	"aoc/day8"
+	"aoc/day9"
 	"github.com/spf13/cobra"
 )
 
@@ -14,14 +21,6 @@ var rootCmd = &cobra.Command{
 	//Run: func(cmd *cobra.Command, args []string) {},
 }
 
-var day7Cmd = &cobra.Command{
-	Use:   "7",
-	Short: "Run day7 challenge",
-	Run: func(cmd *cobra.Command, args []string) {
-		day7.Main()
-	},
-}
-
 // Execute adds all child commands to the root command and sets flags appropriately.
 // This is called by main.main(). It only needs to happen once to the rootCmd.
 func Execute() {
@@ -30,7 +29,14 @@ func Execute() {
 
 func init() {
 	rootCmd.AddCommand(
-		day7Cmd,
+		day7.Cmd,
+		day8.Cmd,
+		day9.Cmd,
+		day10.Cmd,
+		day11.Cmd,
+		day12.Cmd,
+		day13.Cmd,
+		day14.Cmd,
 	)
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,

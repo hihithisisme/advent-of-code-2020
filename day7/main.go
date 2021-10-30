@@ -3,11 +3,20 @@ package day7
 import (
 	"aoc/utils"
 	"fmt"
+	"github.com/spf13/cobra"
 	"strconv"
 	"strings"
 )
 
-func Main() {
+var Cmd = &cobra.Command{
+	Use:   "7",
+	Short: "Run day7 challenge",
+	Run: func(cmd *cobra.Command, args []string) {
+		main()
+	},
+}
+
+func main() {
 	rules := getRules()
 
 	bfs := NewBagBFS(rules, bag("shiny gold"))
