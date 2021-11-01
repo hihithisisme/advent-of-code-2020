@@ -1,7 +1,7 @@
 package day12
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 	"strconv"
@@ -16,14 +16,14 @@ var Cmd = &cobra.Command{
 }
 
 func main() {
-	in := readInput("day12/input.txt")
+	in := readInput("src/day12/input.txt")
 	ship := NewShip(in)
 
 	for ship.stepForPartOne() {
 	}
 	fmt.Printf("part one answer: %v\n", ship.getManhattanDistance())
 
-	in = readInput("day12/input.txt")
+	in = readInput("src/day12/input.txt")
 	ship = NewShip(in)
 
 	for ship.stepForPartTwo() {

@@ -1,7 +1,7 @@
 package day11
 
 import (
-	"aoc/utils"
+	utils2 "aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 	"strings"
@@ -21,7 +21,7 @@ var Cmd = &cobra.Command{
 }
 
 func main() {
-	raw := readInput("day11/input.txt")
+	raw := readInput("src/day11/input.txt")
 	in := NewSeatLayout(raw)
 	in2 := in.clone()
 
@@ -70,7 +70,7 @@ func (s SeatLayout) isEqual(o SeatLayout) bool {
 }
 
 func (s SeatLayout) Print() {
-	utils.Print2D(s.Layout)
+	utils2.Print2D(s.Layout)
 	fmt.Println()
 }
 
@@ -171,10 +171,10 @@ func (s SeatLayout) isFirstSeatInSightPathOccupied(i, i2, d, d2 int) bool {
 }
 
 func (s SeatLayout) getNumOfSurroundingOccupiedSeats(i, i2 int) int {
-	minj := utils.Max(i-1, 0)
-	maxj := utils.Min(i+1, s.rowN-1)
-	minj2 := utils.Max(i2-1, 0)
-	maxj2 := utils.Min(i2+1, s.colN-1)
+	minj := utils2.Max(i-1, 0)
+	maxj := utils2.Min(i+1, s.rowN-1)
+	minj2 := utils2.Max(i2-1, 0)
+	maxj2 := utils2.Min(i2+1, s.colN-1)
 
 	numOfOccupied := 0
 	for j := minj; j <= maxj; j++ {
@@ -192,7 +192,7 @@ func (s SeatLayout) getNumOfSurroundingOccupiedSeats(i, i2 int) int {
 }
 
 func readInput(filename string) (res [][]string) {
-	raw := utils.ReadFile(filename)
+	raw := utils2.ReadFile(filename)
 
 	for _, r := range raw {
 		res = append(res, strings.Split(r, ""))

@@ -1,7 +1,7 @@
 package day9
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 )
@@ -15,7 +15,7 @@ var Cmd = &cobra.Command{
 }
 
 func main() {
-	xmas := NewXmas(25, utils.ReadNumericInput("day9/input.txt"))
+	xmas := NewXmas(25, utils.ReadNumericInput("src/day9/input.txt"))
 	for xmas.step() {
 	}
 

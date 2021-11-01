@@ -1,7 +1,7 @@
 package day13
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 	"math/big"
@@ -17,7 +17,7 @@ var Cmd = &cobra.Command{
 }
 
 func main() {
-	startTime, buses := readInput("day13/input.txt")
+	startTime, buses := readInput("src/day13/input.txt")
 
 	fmt.Printf("part one answer: %v\n", partOne(startTime, buses))
 	fmt.Printf("part two answer: %v\n", partTwo(buses))

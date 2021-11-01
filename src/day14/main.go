@@ -1,7 +1,7 @@
 package day14
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 	"math"
@@ -18,7 +18,7 @@ var Cmd = &cobra.Command{
 
 /* So we take the latest value left in each mem element and add them up */
 func main() {
-	instructions := readInput("day14/input.txt")
+	instructions := readInput("src/day14/input.txt")
 	p := program{
 		values:  map[int]bits{},
 		bitmask: bits{},

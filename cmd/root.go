@@ -1,14 +1,14 @@
 package cmd
 
 import (
-	"aoc/day10"
-	"aoc/day11"
-	"aoc/day12"
-	"aoc/day13"
-	"aoc/day14"
-	"aoc/day7"
-	"aoc/day8"
-	"aoc/day9"
+	"aoc/src/day10"
+	"aoc/src/day11"
+	"aoc/src/day12"
+	"aoc/src/day13"
+	"aoc/src/day14"
+	"aoc/src/day7"
+	"aoc/src/day8"
+	"aoc/src/day9"
 	"github.com/spf13/cobra"
 )
 

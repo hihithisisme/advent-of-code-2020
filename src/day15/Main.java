@@ -6,8 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        List<Integer> in = Reader.ReadLineAsNumbers("day15/input.txt");
+
+    public static void main() throws Exception {
+        List<Integer> in = Reader.ReadLineAsNumbers("src/day15/input.txt");
 
         System.out.printf("part one answer: %s\n", game(in, 2020));
         System.out.printf("part two answer: %s\n", game(in, 30000000));

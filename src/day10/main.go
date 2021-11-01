@@ -1,7 +1,7 @@
 package day10
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 	"sync"
@@ -16,7 +16,7 @@ var Cmd = &cobra.Command{
 }
 
 func main() {
-	in := asc(utils.ReadNumericInput("day10/input.txt"))
+	in := asc(utils.ReadNumericInput("src/day10/input.txt"))
 	in.ascendingSort()
 
 	fmt.Printf("part one answer: %v\n", partOne(in))

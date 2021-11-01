@@ -1,7 +1,7 @@
 package day7
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"fmt"
 	"github.com/spf13/cobra"
 	"strconv"
@@ -34,7 +34,7 @@ func main() {
 }
 
 func getRules() []rule {
-	in := utils.ReadFile("day7/input.txt")
+	in := utils.ReadFile("src/day7/input.txt")
 	rules := []rule{}
 	for _, ruleString := range in {
 		words := strings.Split(ruleString, " ")

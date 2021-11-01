@@ -1,7 +1,7 @@
 package day9
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 )
 
 type XmasEncryption struct {

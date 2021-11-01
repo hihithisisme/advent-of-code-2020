@@ -1,7 +1,7 @@
 package day8
 
 import (
-	"aoc/utils"
+	"aoc/src/utils"
 	"strconv"
 	"strings"
 )
@@ -19,7 +19,7 @@ func (i Instruction) copy() Instruction {
 }
 
 func getInstructions() []Instruction {
-	raw := utils.ReadFile("day8/input.txt")
+	raw := utils.ReadFile("src/day8/input.txt")
 
 	var instructions []Instruction
 
