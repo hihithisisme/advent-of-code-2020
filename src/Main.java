@@ -12,6 +12,26 @@ public class Main {
         new CommandLine(new Main()).execute(args);
     }
 
+    @CommandLine.Command(name = "21-1")
+    void day1_21() throws Exception {
+        day1_21.Main.main();
+    }
+
+    @CommandLine.Command(name = "21-2")
+    void day2_21() throws Exception {
+        day2_21.Main.main();
+    }
+
+    @CommandLine.Command(name = "21-3")
+    void day3_21() throws Exception {
+        day3_21.Main.main();
+    }
+
+    @CommandLine.Command(name = "21-4")
+    void day4_21() throws Exception {
+        day4_21.Main.main();
+    }
+
     @CommandLine.Command(name = "15")
     void day15() throws Exception {
         day15.Main.main();
