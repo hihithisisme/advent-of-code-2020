@@ -47,6 +47,11 @@ public class Main {
         day7_21.Main.main();
     }
 
+    @CommandLine.Command(name = "21-8")
+    void day8_21() throws Exception {
+        day8_21.Main.main();
+    }
+
     @CommandLine.Command(name = "15")
     void day15() throws Exception {
         day15.Main.main();
