@@ -177,6 +177,6 @@ print(s)
 
 # def func2(s):
 #     pass
-s = 'target area: x=282184..482382, y=-502273..-374688'
+# s = 'target area: x=282184..482382, y=-502273..-374688'
 ans2 = func1(s)
 submit(DAY, 2, ans2)
